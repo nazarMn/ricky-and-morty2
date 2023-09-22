@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+.wrap {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.filter {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.filter input {
+    width: 200px;
+    height: 40px;
+    padding: 0 10px;
+    border: none;
+    box-shadow: 0 0 2px #333;
+    border-radius: 5px;
+}
+
+.characterContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.characterItem {
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 2px 10px #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    justify-content: space-between;
+}
+
+.characterItem img {
+    width: 80%;
+    margin: 20px 0;
+    border-radius: 20px;
+}
+
+.characterItem button {
+    padding: 5px 50px;
+    border: none;
+    background-color: rgb(77, 172, 227);
+    color: #fff;
+    border-radius: 5px;
+}
+
+.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.pagination div {
+    margin: 0 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #eee;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-weight: 700;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(77, 172, 227);
+    color: #fff;
+    border-radius: 5px;
+}
+
+.popup {
+    width: 400px;
+    height: 550px;
+    box-shadow: 0 0 10px #eee;
+    border-radius: 10px;
+    display: none;
+
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    margin-left: -200px;
+    background-color: rgba(255, 255, 255, 0.94);
+}
+
+.closeContainer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px;
+    width: 100%;
+    color: red;
+}
+
+.closeContainer i {
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.closeContainer i:hover {
+    transform: rotate(180deg);
+    transition: 1s;
+}
+
+.popupContainer {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popupContainer img {
+    width: 200px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.popupContainer div {
+    background-color: #eee;
+    border-radius: 10px;
+    width: 80%;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+.speciesGroup {
+    display: flex;
+    align-items: center;
+}
+
+.speciesGroup button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(82, 173, 212);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}

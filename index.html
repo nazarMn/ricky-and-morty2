@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricky Morty</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js' integrity='sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==' crossorigin='anonymous'></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css' integrity='sha512-KOWhIs2d8WrPgR4lTaFgxI35LLOp5PRki/DxQvb7mlP29YZ5iJ5v8tiLWF7JLk5nDBlgPP1gHzw96cZ77oD7zQ==' crossorigin='anonymous'/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+</head>
+<body>
+<div>
+    <label for="genderFilter">Filter Gender:</label>
+    <select id="genderFilter">
+        <option value="">All</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="genderless">Genderless</option>
+        <option value="unknown">Unknown</option>
+    </select>
+    <button id="filterByGender">Filter</button>
+</div>
+
+
+        <div class="popup">
+            <div class="closeContainer">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="popupContainer">
+
+            </div>
+        </div>
+
+        <div class="wrap">
+
+            <div class="filter">
+                <div class="speciesGroup">
+                     <input type="text" id="speciesFinder" placeholder="Species">
+                     <button id="addSpecies">Add</button>
+                </div>
+                     
+            </div>
+      
+
+
+            <div class="characterContainer"></div>
+        </div>
+        <div class="pagination">
+            <button id="prewBtn">-</button>
+            <div id="pageNumber">1</div>
+            <button id="nextBtn">+</button>
+        </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
